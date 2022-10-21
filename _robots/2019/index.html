@@ -1,0 +1,433 @@
+---
+layout: default
+title: Atom Factory 2019
+description: "Participation à la Coupe de France de Robotique 2019 - Atom Factory"
+---
+<h1>Coupe de Robotique 2019 - Atom Factory</h1>
+
+<nav id="table-des-matieres">
+	<h2>Table des matières</h2>
+	<ul>
+		<li>1. <a href="#resume-reglement">Résumé du règlement</a></li>
+		<li>2. <a href="#compte-rendu">Compte rendu</a>
+		<li>
+			<ul>
+				<li>2.1. <a href="#compte-rendu-poster">Genèse du VRAC</a></li>
+				<li>2.2. <a href="#compte-rendu-poster">Base de départ</a></li>
+				<li>2.3. <a href="#compte-rendu-poster">Poster technique</a></li>
+				<li>2.4. <a href="#compte-rendu-architecture-electronique">Architecture électronique</a></li>
+				<li>2.5. <a href="#compte-rendu-composants">Les composants du robot</a></li>
+				<li>2.6. <a href="#compte-rendu-editeur-strategie">Editeur de stratégie</a></li>
+				<li>2.7. <a href="#compte-rendu-difficultes">Les difficultés qu'on a rencontrées</a></li>
+				<li>2.8. <a href="#compte-rendu-conclusion">Conclusion</a></li>
+				<li>2.9. <a href="#compte-rendu-remerciements">Remerciements</a></li>
+			</ul>
+		</li>
+		<li>3. <a href="#matchs-cdf">Matchs Coupe de France</a></li>
+		<li>4. <a href="#matchs-idf">Matchs Coupe Île-de-France</a></li>
+	</ul>
+</nav>
+
+<article>
+	<section id="resume-reglement">
+		<h2>1. Résumé du règlement<a class="self-link" href="#resume-reglement"></a></h2>
+
+		<figure class="center" style="max-width:500px;">
+			<img src="atom-factory_table.png"><br>
+			<figcaption>Table Atom Factory</figcaption>
+		</figure>
+		
+		<figure class="figure-no-border">
+			<blockquote>
+				<p>Il y a 150 ans, Dmitri Mendeleïev révolutionnait notre compréhension de la matière et faisait faire un pas de géant à la science en publiant ses travaux sur la classification des éléments.</p>
+
+				<p>Grâce à son célèbre tableau, il a supposé l’existence d’atomes inconnus et a donc laissé des cases vides. Quelques nouveaux atomes seulement ont été découverts depuis, validant par la même occasion les travaux de Dmitri Mendeleïev !</p>
+
+				<p>Au-delà des éléments connus, il y en a toujours que nous ne connaissons pas. Découvrir des atomes peut être une tâche difficile, et requiert souvent des expériences complexes.</p>
+
+				<p>Aujourd’hui, nous avons besoin de l’aide de vos robots pour faire ces expériences !</p>
+
+				<p>Vos missions seront :</p>
+				<ul>
+					<li><strong>Classer les atomes.</strong> Comme dans le tableau périodique des éléments, il vous faudra trier les atomes.</li>
+					<li><strong>Peser les atomes.</strong> Car souvent les plus rares sont les plus lourds (et parfois les plus précieux...).</li>
+					<li><strong>Créer un nouvel élément.</strong> Et pour cela rien ne vaut un bon accélérateur de particules.</li>
+					<li><strong>Faire votre propre expérience.</strong> Libre à vous de proposer une expérience de votre création.</li>
+					<li><strong>Prédire les éléments non connus.</strong> Tout comme Dmitri Mendeleïev a su prédire la position des éléments
+					inconnus, il vous faudra faire une prédiction. Votre score par exemple!</li>
+				</ul>
+			</blockquote>
+			<cite>Extrait de la <a class="external-link" href="https://www.coupederobotique.fr/edition-2019/le-concours/thematique/" target="_blank">Thématique 2019</a></cite>
+		</figure>
+	</section>
+
+	<section id="compte-rendu">
+		<h2>2. Compte rendu<a class="self-link" href="#compte-rendu"></a></h2>
+
+		<p class="note">
+			NOTE: Ce compte rendu à été originalement publié sur le forum de Planète-Sciences le 18 Juillet 2019 (<a class="external-link" href="https://www.planete-sciences.org/forums/viewtopic.php?t=18633" target="_blank">lien</a>)
+		</p>
+
+		<section id="compte-rendu-genese">
+			<h3>2.1. Genèse du VRAC<a class="self-link" href="#compte-rendu-genese"></a></h3>
+			<p>
+				<strong>Avant de commencer la présentation du robot, petit retour sur l'histoire de l'association ARDIC et de l'équipe VRAC.</strong>
+			</p>
+			<p>
+				L'an passé (en 2018), on a participé à la Coupe en tant que le CRAC (Club de Robotique des Amis de la Coupe) de l'IUT de Cachan et avec l'équipe on s'est vraiment éclaté.
+				La majorité des membres de l'équipe partant dans des écoles différentes, on était encore quelques uns à rester à l'IUT à poursuivre dans une licence pro (on était donc toujours à l'IUT mais en alternance). On à alors créé notre association ARDIC (Association de Robotique De l'IUT de Cachan) quelques mois avant la coupe.<br>
+				Après quelques idées de nom d'équipe comme CRAC.OS (CRAC Operating System), CRC (Club de Robotique de Cachan), le choix s'est finalement porté sur VRAC qui est à l'image du désordre qui règne dans le local du CRAC (accessoirement c'est l'acronyme pour Vieux Roboticiens Amis de la Coupe).
+			</p>
+			<figure class="center" style="max-width:800px;">
+				<a href="images/team.jpg"><img src="thumbnails/team.jpg"></a>
+				<figcaption>L'équipe (épuisé) au complet au retour à la maison après la coupe</figcaption>
+			</figure>
+
+			<figure class="center" style="max-width:800px;">
+				<a href="images/official_match.jpg"><img src="thumbnails/official_match.jpg"></a>
+				<figcaption>fin du match de la série 2</figcaption>
+			</figure>
+			
+			<figure class="center" style="max-width:100%;">
+				<div class="sameline">
+					<a href="images/robot1.jpg"><img src="thumbnails/robot1.jpg"></a>
+					<a href="images/robot2.jpg"><img src="thumbnails/robot2.jpg"></a>
+					<a href="images/robot3.jpg"><img src="thumbnails/robot3.jpg"></a>
+					<a href="images/robot4.jpg"><img src="thumbnails/robot4.jpg"></a>
+				</div>
+				<figcaption>Quelques angles du robot</figcaption>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-base-depart">
+			<h3>2.2. Base de départ<a class="self-link" href="#compte-rendu-base-depart"></a></h3>
+			<p>On n'est pas parti de zéro pour le code, on a gardé quelques briques logicielles du CRAC dont nottament:</p>
+			<ul>
+				<li>Le programme de lecture de stratégie qui tourne sur la carte IHM</li>
+				<li>L'asservissement (en distance par roue, je prépare du polaire pour l'an prochain), il était originalement sur une PSOC de Cypress Semiconductor et on l'a adapté sur une NUCLEO32</li>
+			</ul>
+			<p>Les premiers "pas" du robot étaient si émouvants qu'il a fallu en faire une vidéo</p>
+			<figure class="center" style="max-width:100%;">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4oDB1IwRSXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<figcaption>(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=4oDB1IwRSXY">lien youtube</a>)</figcaption>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-poster">
+			<h3>2.3. Poster technique<a class="self-link" href="#compte-rendu-poster"></a></h3>
+			<figure class="center" style="max-width:500px;">
+				<a href="images/poster.jpg"><img src="thumbnails/poster.jpg"></a>
+				<figcaption>Poster technique (aux informations très approximatives fait la veille de la deadline)</figcaption>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-architecture-electronique">
+			<h3>2.3. Architecture électronique<a class="self-link" href="#compte-rendu-architecture-electronique"></a></h3>
+			<p>
+				<strong>De manière un poil plus détaillé, il y a ce schéma :</strong> (ERRATUM: les dir des moteurs pas à pas sont sur un autre registre à décalage qui est à la suite de celui des électrovannes)
+			</p>
+			<figure class="center" style="max-width:500px;">
+				<a href="images/synoptique.jpg"><img src="thumbnails/synoptique.jpg"></a>
+				<figcaption>Schéma synoptique</figcaption>
+			</figure>
+
+			<figure class="center">
+				<a href="IOBoard-v1.2-documentation-rev1.1.pdf"><img src="thumbnails/ioboard-documentation.png"></a>
+				<figcaption>cliquez sur l'image pour ouvrir la documentation complète (4 pages)</figcaption>
+			</figure>
+
+		</section>
+
+		<section id="compte-rendu-elements">
+			<h3>2.5. Les élements du robot<a class="self-link" href="#compte-rendu-elements"></a></h3>
+
+			<p><strong>Il y a quelques trucs sur le robot dont:</strong></p>
+
+			<p>
+				<strong>Un bras à l'avant</strong>: 4 servomoteurs Herkulex DRS-0101, 4 pompes a vide avec 4 électrovannes et 3 capteurs de couleur TCS34725
+			</p>
+			<figure class="center">
+				<a href="images/bras_avant.jpg"><img src="thumbnails/bras_avant.jpg"></a>
+				<figcaption>bras avant pour les atomes au sol</figcaption>
+			</figure>
+			
+			<p>
+				<strong>Un "back grippers"</strong>: c'est un systèmes composé 6 ventouses montées sur 2 rails (une ventouse fixe au milieu, et les deux autres déplaçables horizontalement), le tout monté sur 2 rails verticaux.
+				Chaque ventouse dispose de sa propre pompe à vide avec son électrovanne.
+				Le mouvement vertical des 2 rails est assuré par un simple fil de pêche qui vient s'enrouler autour de l'arbre d'un moteur pas a pas.
+				Le mouvement horizontal des ventouses est assuré par des moteurs pas à pas avec des courroies.
+			</p>		
+			<figure class="center" style="max-width:100%;">
+				<div class="sameline">
+					<a href="images/backgrippers1.jpg"><img src="thumbnails/backgrippers1.jpg"></a>
+					<a href="images/backgrippers2.jpg"><img src="thumbnails/backgrippers2.jpg"></a>
+				</div>
+				<figcaption>back grippers pour les atomes sur les distributeurs</figcaption>
+			</figure>
+
+			<p>
+				<strong>Une pelle </strong>qui permet de rassembler les atomes de la zone de chaos en un tas facilement rattrapable par le bras avant.
+				Elles sont maintenus en position ouverte par un gros élastique en dessous, et toujours ce même système de fil de pêche et des moteurs pas a pas pour les remonter.
+			</p>	
+			<figure class="center">
+				<a href="images/shovel.jpg"><img src="thumbnails/shovel.jpg"></a>
+				<figcaption>La pelle pour rassembler la zone de chaos</figcaption>
+			</figure>
+
+			<p>
+				<strong>Des moteurs </strong>maxon ec 45 flat, leurs nappe flexible est très très délicate, on a eu quelques frayeurs. Les contrôleurs sont des escon module 24/2 (un peu sous-dimensionné).
+				Les roues sont des roues de trottinette de 100mm, leur largeur de contact est faible avec le sol, ce qui fait de jolies marques après de nombreux recalages (on a pas réussi à réduire plus ce phénomène).
+				L'asservissement est fait sur une NUCLEO-L432KC.
+			</p>
+			<figure class="center">
+				<a href="images/motorization.jpg"><img src="thumbnails/motorization.jpg"></a>
+				<figcaption>Les moteurs avec les roues de trotinette</figcaption>
+			</figure>
+
+			<p>
+				<strong>Des roues odométriques</strong> faites avec un joint torique de 100mm et un encodeur optique PD30 de 1024 pas.
+				Pour les plaquer au sol, il y a un système de rail fait maison composé de 4 roulements à bille à gorge en U, de 2 tiges de fer, et d'un ressort.
+				On a eu le droit à de belles roues en aluminium faites par l'InnovLab.
+			</p>
+			<figure class="center" style="max-width:100%;">
+				<div class="sameline">
+					<a href="images/wheels.jpg"><img src="thumbnails/wheels.jpg"></a>
+					<a href="images/side.jpg"><img src="thumbnails/side.jpg"></a>
+				</div>
+				<figcaption>Les roues odométriques</figcaption>
+			</figure>
+
+			<p>
+				<strong>Un IHM </strong>fait avec une carte DISCO-F469NG, qui s'occupe de la lecture d'un fichier de stratégie du robot et la IOboard
+			</p>
+			<figure class="center" style="max-width:100%;">
+				<div class="sameline">
+					<a href="images/top.jpg"><img src="thumbnails/top.jpg"></a>
+					<a href="images/pcb.jpg"><img src="thumbnails/pcb.jpg"></a>
+					<a href="images/top2.jpg"><img src="thumbnails/top2.jpg"></a>
+				</div>
+				<figcaption>Electronique du robot</figcaption>
+			</figure>
+
+			<p>
+				<strong>A côté du robot, on a aussi:</strong>
+			</p>
+			
+			<p>
+				<strong>L'expérience</strong> est composé une centrale nucléaire avec 4 leds RGB. Elle aurait du être activé en bluetooth mais au dernier moment on s'est rabattu vers un capteur de distance à ultrason pour le déclenchement.
+				La centrale est piloté par une FRDM-KL25Z.
+			</p>
+			<figure class="center">
+				<a href="images/experience.jpg"><img src="thumbnails/experience.jpg"></a>
+				<figcaption>Expérience de qualité PRO</figcaption>
+			</figure>
+
+			<p>
+				<strong>L'électron:</strong> Après plus de 6 versions différentes, la version finale à été faite en moitié avec du filament fluorescent. On retrouve encore une fois le fameux fil de pêche qui s'enroule pour faire grimper l'électron.
+				Il est relié à l'expérience pour recevoir le signal de départ. Il est piloté par une NUCLEO-F303RE.
+			</p>
+			<figure class="center" style="max-width:300px">
+				<a href="images/electron.jpg"><img src="thumbnails/electron.jpg"></a>
+				<figcaption>l'électron est est bel et bien cassé sur cette photo</figcaption>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-editeur-strategie">
+			<h3>2.6 Editeur de stratégie<a class="self-link" href="#compte-rendu-editeur-strategie"></a></h3>
+			<p>
+				On a développé un éditeur de stratégie (très inspiré de celui du CRAC) pour programmer rapidement les séquences d'actions et de mouvements du robot.
+			</p>
+			<figure class="center" style="max-width:800px;">
+				<video controls>
+					<source src="editeur-strats.mp4" type="video/mp4">
+				</video>
+				<figcaption>Stratégie de match</figcaption>
+			</figure>
+
+			<figure class="center" style="max-width:100%;max-height:600px;">
+				<a href="timecode1.1.pdf"><img src="thumbnails/timecode.png"></a>
+				<figcaption>timecode prévisionnel du match</figcaption>
+			</figure>
+		</section>
+	
+		<section id="compte-rendu-difficultes">
+			<h3>2.7. Difficultés rencontrées<a class="self-link" href="#compte-rendu-difficultes"></a></h3>
+			<p><strong>Tout à l'air beau et facile, on a eu pas mal de soucis quand même:</strong></p>
+			<ul>
+				<li>s'organiser, trouver du temps c'est vraiment compliqué quand on a que les soirs et weekend pour bosser dessus</li>
+				<li>l'asservissement qui chie plus ou moins pour des raisons mystiques (roues odométriques ? contrôleurs maxon ?): il arrive parfois qu'une simple ligne droite soit approximative de plusieurs centimetres. Un temps de freinage très lent et des recalages bordures ont limité la casse. On retourne sur des moteurs à balais l'an prochain, avec un contrôleur basique et un asservissement polaire</li>
+				<li>La détection du robot adverse à base de 1 HC-04 à l'avant, et d'un autre à l'arrière...</li>
+				<li>
+					On s'était dit que chopper celles de totofweb (<a class="external-link" target="_blank" href="http://www.totofweb.net/robots-projet-67.html">http://www.totofweb.net/robots-projet-67.html</a>) serait tip top, mais nous n'avons pas eu le temps de les faire fonctionner (un court-circuit bien caché ?)
+					En urgence (lors de l'arrivé sur le stand à la coupe) et afin de se faire homologuer, on a pisto-collé deux malheureux capteurs de distance à ultrason en suivant scrupuleusement la célèbre méthode la RACHE. Ces capteurs n'étaient pas adaptés, mal placés, et mal réglés mais à part ça pas de problème à signaler. On prépare un système bien redondant pour l'an prochain avec lidar, infrarouge, radio, ultrason, ToF, mètre à ruban...
+				</li>
+				<li>On à utilisé des Herkulex DRS-0101 mais ils n'ont pas réussi à lever le bras à partir d'un seul palet ventousé, alors que nous espérions en soulever 4 en même temps. J'ai anticipé le coup pour l'an prochain avec des servo 60kg/cm (contre 12kg/cm pour les DRS-0101)</li>
+				<li>On est trop parti dans l'idée qu'on pouvait faire toutes les actions en 100s, mais la réalité nous a rapidement montré que ce n'était pas possible à notre niveau (en encore moins avec d'autres robots sur la table)</li>
+			</ul>
+
+			<figure class="center" style="max-width:100%;">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pLAuG5JFWdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<figcaption>Préparation des futurs remplacants des herkulex (<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=pLAuG5JFWdE">lien youtube</a>)</figcaption>
+			</figure>
+		</section>
+		
+		<section id="compte-rendu-conclusion">
+			<h3>2.8. Conclusion<a class="self-link" href="#compte-rendu-conclusion"></a></h3>
+
+			<p>
+				<strong>Pour conclure</strong>, on a tous passé de que de super moments, aussi bien dans la préparation que pendant la coupe.
+				On s'y recolle l'an prochain sans le moindre doute, avec plus d'ambitions et de nouveaux membres.
+				
+				Merci a l'équipe du CRAC de cette année qui ont supporté le squat de leurs locaux et pour l'emprunt d'outils, à l'IUT de Cachan et l'université Paris SUD pour les financement.
+				Merci à nos sponsors SICK France, Desautel et Gimaex.
+				Un énorme merci à Planète Sciences pour cet événement magique !
+			</p>
+
+			<p><strong>En bonus, une <a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=yCltNlWXB-o">visite guidée du CRAC</a> ;)</strong></p>
+		</section>
+
+		<section id="compte-rendu-remerciements">
+			<h3>2.9. Remerciements<a class="self-link" href="#compte-rendu-remerciements"></a></h3>
+
+			<p><strong>Merci à nos sponsors et partenaires !</strong></p>
+			<a href="https://www.sick.com"><img style="width:300px" src="partenaires/sick.jpg"></a><br>
+			<a href="https://gimaex.eu"><img style="width:300px" src="partenaires/gimaex.png"></a><br>
+			<a href="https://www.desautel.fr"><img style="width:300px" src="partenaires/desautel.jpg"></a><br>
+			<a href="http://www.iut-cachan.u-psud.fr"><img style="width:150px" src="partenaires/iutcachan.png"></a><br>
+			<a href="http://innovlab-iut-cachan.blogspot.com"><img style="width:300px" src="partenaires/innovlab.png"></a>
+		</section>
+	</section>
+
+	<section id="matchs-cdf">
+		<h2>3. Matchs Coupe de France<a class="self-link" href="#matchs-cdf"></a></h2>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019cdr_serie1.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 1: VRAC (50) - Cybernetique en Nord (39)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=-JtJlAh_gw8&t=1117s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/classement-provisoire-serie-1-de-la-cdr2019/">Classement provisoire</a>: (54ème ex aequo, 50pts)<br>
+				<a href="matchs/2019cdr_serie1.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019cdr_serie2.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 2: ESTIA SYSTEM (64) - VRAC (150)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=beqMgkBPsFQ&t=2075s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/classement-provisoire-serie-2-de-la-cdr2019/">Classement provisoire</a>: (17ème, 200pts)<br>
+				<a href="matchs/2019cdr_serie2.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019cdr_serie3.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 3: VRAC (158) - Cybernetique en Sud (152)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=VO-Z3vi-b_g&t=6216s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/classement-provisoire-serie-3-de-la-cdr2019/">Classement provisoire</a>: (17ème, 358pts)<br>
+				<a href="matchs/2019cdr_serie3.png">Score du match</a>
+			</figcaption>
+
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019cdr_serie4.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 4: VRAC (98) - OMYBOT (170)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=t5QDuZOVZII&t=1566s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/classement-provisoire-serie-4-de-la-cdr2019/">Classement provisoire</a>: (21ème, 456pts)<br>
+				<a href="matchs/2019cdr_serie4.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019cdr_serie5.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 5: Evolutek&lt;&lt; (107) - VRAC (0)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=-ouw-ubV11U&t=7262s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/classement-definitif-serie-5-de-la-cdr2019/">Classement provisoire</a>: (34ème, 456pts)<br>
+				<a href="matchs/2019cdr_serie5.png">Score du match</a>
+			</figcaption>
+		</figure>
+	</section>
+
+	<section id="matchs-idf">
+		<h2>4. Matchs Coupe Île-de-France<a class="self-link" href="#matchs-idf"></a></h2>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019idf_serie1.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 1: Sudriabotik (50) - VRAC (82)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=-ouw-ubV11U&t=7262s">YouTube</a><br>
+				<a href="matchs/2019idf_classement-serie1.png">Classement provisoire</a>: 5ème, 82pts<br>
+				<a href="matchs/2019idf_serie1.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019idf_serie2.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 2: VRAC (88) - PM-ROBOTIX (91)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=EJdXdfu3JSg&t=5467s">YouTube</a><br>
+				<a href="matchs/2019idf_classement-serie2.png">Classement provisoire</a>: 7ème, 170pts<br>
+				<a href="matchs/2019idf_serie2.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019idf_serie3.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 3: VRAC (0) - Kraboss (114)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=lHgrLBy1PoA&t=2383s">YouTube</a><br>
+				<a href="matchs/2019idf_classement-serie3.png">Classement provisoire</a>: 10ème, 170pts<br>
+				<a href="matchs/2019idf_serie3.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019idf_serie4.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 4: Goldorak (183) - VRAC (139)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=o21X0zhgeAo&t=1417s">YouTube</a><br>
+				<a href="matchs/2019idf_classement-serie4.png">Classement provisoire</a>: 10ème, 170pts<br>
+				<a href="matchs/2019idf_serie4.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2019idf_serie5.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 5: Coffeelutek (209) - VRAC (161)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=o21X0zhgeAo&t=4756s">YouTube</a><br>
+				<a href="matchs/2019idf_classement-serie5.png">Classement fin de phase qualificative</a>: 10ème, 170pts<br>
+				<a href="matchs/2019idf_serie5.png">Score du match</a>
+			</figcaption>
+		</figure>
+	</section>
+</article>

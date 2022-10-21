@@ -1,0 +1,8 @@
+baseurl: "/vrac"
+collections:
+  robots:
+    output: true
+    permalink: /:path
+exclude:
+  - README.md
+  - generate_thumbnails.sh

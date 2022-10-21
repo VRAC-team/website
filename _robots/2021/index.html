@@ -1,0 +1,578 @@
+---
+layout: default
+title: Sail The World 2021
+description: "Participation à la Coupe de France de Robotique 2021 - Sail The World"
+---
+<h1>Coupe de Robotique 2021 - Sail The World</h1>
+
+<nav id="table-des-matieres">
+	<h2>Table des matières</h2>
+
+	<ul>
+		<li>1. <a href="#resume-reglement">Résumé du règlement</a></li>
+		<li>2. <a href="#compte-rendu">Compte rendu</a></li>
+		<li>
+			<ul>
+				<li>2.1. <a href="#compte-rendu-introduction">Introduction</a></li>
+				<li>2.2. <a href="#compte-rendu-poster">Poster technique</a></li>
+				<li>2.3. <a href="#compte-rendu-architecture-electronique">Architecture électronique</a></li>
+				<li>2.4. <a href="#compte-rendu-nouveautes">Les nouveautés de cette année</a></li>
+				<li>2.5. <a href="#compte-rendu-difficultes">Les imprévus/difficultés</a></li>
+				<li>2.6. <a href="#compte-rendu-caracteristiques">Caractéristiques des robots</a></li>
+				<li>2.7. <a href="#compte-rendu-contributions">Nos autres contributions</a></li>
+				<li>2.8. <a href="#compte-rendu-conclusion">Conclusion</a></li>
+				<li>2.9. <a href="#compte-rendu-remerciements">Remerciements</a></li>
+			</ul>
+		</li>
+		<li>3. <a href="#matchs-cdf">Matchs Coupe de France</a></li>
+		<li>4. <a href="#matchs-idf">Matchs Coupe Île-de-France</a></li>
+	</ul>
+</nav>
+
+<article>
+	<section id="resume-reglement">
+		<h2>1. Résumé du règlement<a class="self-link" href="#resume-reglement"></a></h2>
+
+		<figure class="center" style="max-width:500px;">
+			<img src="sail-the-world_table.png"><br>
+			<figcaption>Table Sail The World</figcaption>
+		</figure>
+
+		<figure class="figure-no-border">
+			<blockquote>
+				<figure id="logo-reglement">
+					<img src="sail-the-world_logo.png"><br>
+					<figcaption>Logo Sail The World</figcaption>
+				</figure>
+
+				<p>
+					Préparez-vous à prendre le large ! En 2021, les robots partiront voguer à travers le monde.
+					Ils devront maîtriser l’art de la navigation afin d’arriver à bon port.
+				</p>
+
+				<p>
+					Les phares et les balises orienteront vos navires. Planifiez votre voyage et rapportez le récit de vos aventures.
+					Souquez ferme, moussaillons !
+				</p>
+
+				<p>Vos missions seront :</p>
+				<ul>
+					<li>Créer des chenaux pour rétablir la circulation maritime.</li>
+					<li>Relever les manches à air qui ont été balayées par la tempête.</li>
+					<li>Allumer le phare pour que les bateaux égarés puissent rentrer au port en toute sécurité.</li>
+					<li>Arriver à bon port, afin de mettre les robots au mouillage, à l’abri du vent, à la fin de leur voyage.</li>
+					<li>Hisser vos pavillons pour transmettre des messages aux autres navires.</li>
+					<li>Estimer votre performance.</li>
+				</ul>
+			</blockquote>
+			<cite>Extrait de la <a class="external-link" target="_blank" href="https://www.coupederobotique.fr/edition-2021/le-concours/thematique/">Thématique 2021</a></cite>
+		</figure>
+	</section>
+
+	<section id="compte-rendu">
+		<h2>2. Compte rendu<a class="self-link" href="#compte-rendu"></a></h2>
+
+		<p class="note">
+			NOTE 1: Exceptionnellement à cause du covid-19, le (quasi) même règlement de 2020 est rejoué en 2021. Peu d'équipes avaient pu participer en 2020.
+		</p>
+
+		<p class="note">
+			NOTE 2: Ce compte rendu à été originalement publié sur le forum de Planète-Sciences le 1 Septembre 2021 (<a class="external-link" href="https://www.planete-sciences.org/forums/viewtopic.php?t=18768" target="_blank">lien</a>)
+		</p>
+
+		<section id="compte-rendu-introduction">
+			<h3>2.1. Introduction<a class="self-link" href="#compte-rendu-introduction"></a></h3>
+
+			<p>
+				En 2021 on a tenté le tout pour le tout: recommencer de zéro le robot pour le même thème "Sail the World", et même encore mieux, faire 2 robots !<br>
+				La seule chose qu'on a gardé c'est le phare et encore il a eu le droit à une modification afin de l'activer plus facilement.
+			</p>
+	
+			<p>
+				Comme d'habitude, la fabrication des robots à commencer pile poil un mois avant la coupe :D<br>
+				L'électronique était pourtant faite plus de 5 mois avant la coupe, mais il manquait un peu de motivation et de temps pour terminer la CAO on va dire.
+			</p>
+			
+			<figure class="center" style="max-width:100%;">
+				<div class="sameline">
+					<a href="images/mise-en-plan-grosbot.jpg"><img src="thumbnails/mise-en-plan-grosbot.jpg"></a>
+					<a href="images/mise-en-plan-potibot.jpg"><img src="thumbnails/mise-en-plan-potibot.jpg"></a>
+				</div>
+				<figcaption>mise en plan des robots</figcaption>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-poster">
+			<h3>2.2. Poster technique<a class="self-link" href="#compte-rendu-poster"></a></h3>
+			<figure class="center" style="max-width:500px;">
+				<a href="images/poster_A1.jpg"><img src="thumbnails/poster_A1.jpg"></a>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-architecture-electronique">
+			<h3>2.3. Architecture électronique<a class="self-link" href="#compte-rendu-architecture-electronique"></a></h3>
+			<figure class="center" style="max-width:100%;">
+				<a href="images/architecture.png"><img src="thumbnails/architecture.png"></a>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-nouveautes">
+			<h3>2.4. Les nouveautés de cette année<a class="self-link" href="#compte-rendu-nouveautes"></a></h3>
+			<ul>
+				<li>2 robots !</li>
+				<li>un asservissement polaire !</li>
+				<li>des moteurs de très bonne qualité Faulhaber et une odométrie beaucoup plus fiable</li>
+				<li>des actionneurs qui prévoient beaucoup plus de marge d'erreur de positionnement du robot</li>
+				<li>des roues encore plus grosses qui adhèrent encore plus</li>
+				<li>un linux embarqué qui fait du traitement vidéo<br>
+			Une raspberry pi 4, un shield CAN, une camera et quelques lignes de python plus tard, hop l'orientation de la girouette est faite!<br>
+			Le linux gère aussi le lidar par USB.</li>
+				<li>un système enfin fiable de détection des robots par lidar</li>
+				<li>détection des mines prévues à certains endroits<br>
+			Dans le petit port, il arrivait qu'une bouée aléatoire fasse son apparition ou qu'on en décale une.<br>
+			On pouvait alors activer ou non une prévision de mine lors qu'on s'approchait des bordures du terrain et ainsi passer à l'étape suivante de la dépose pour éviter des blocages.</li>
+				<li>Les cartes électroniques moins modulaire<br>
+			On est repassé sur une bonne grosse carte centrale qui regroupe tous les actionneurs/capteurs (io_board), comparé à 2020 où on avait 2 cartes pour chaque bras, 2 cartes pour chaque groupe de 6 pompes.<br>
+			On avait beaucoup moins de fils d'alim entre chaque carte, moins de nappe entre chaque carte pour le bus CAN, moins de composants en général.</li>
+				<li>des insert dans quasi toutes les pièces 3D<br>
+			Fini les écrous qu'il faut placer à la main et qui tombent en plein milieu du robot quand il faut démonter une pièce.<br>
+			On utilise principalement des inserts M3 pour toutes les pièces et des inserts M5 pour le bloc moteurs.</li>
+			</ul>
+
+			<figure class="center" style="max-width:100%;">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9dYttZ5j-Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<figcaption>époustouflant les moteurs Faulhaber avec une bonne odométrie (<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=9dYttZ5j-Ik">lien youtube</a>)</figcaption>
+			</figure>
+
+		</section>
+
+		<section id="compte-rendu-difficultes">
+			<h3>2.5. Les imprévus/difficultés<a class="self-link" href="#compte-rendu-difficultes"></a></h3>
+
+			<p>
+				<strong>une journée de galère avec les encodeurs à effet hall</strong><br>
+				Lors des premiers tests du petit robot, on avait l'odométrie qui "sautait" d'un coup de manière très aléatoire.<br>
+				Après de longues investigations et grâce à la lecture de l'intensité du champ magnétique sur les encodeurs, on s'est aperçu que l'intensité était beaucoup trop faible.<br>
+				On a d'abord pensé à des aimants ou des encodeurs défectueux, mais il s'est avéré que le champ magnétique était absorbé par le roulement à bille de la roue odo.<br>
+				En effet on n’a pas utilisé exactement les mêmes roulements à billes entre le gros robot et le petit (surement un alliage acier plus ferromagnétique qui a fait cette grosse différence ?).<br>
+				La solution à été de changer d'aimant de 8mm de diamètre vers des 6mm de diamètre, son champ magnétique étant moins fort il n’atteignais pas les roulements à bille et n'était donc plus absorbé !<br>
+			</p>
+			
+			<p>
+				<strong>un asservissement polaire pas encore nickel/chrome</strong><br>
+				Coder une partie aussi vitale 15 jours avant la coupe ce n''était pas sans risque.<br>
+				Il arrive qu'il fasse une rotation de 90deg ou 180deg dans le mauvais sens, se rend compte que ce n'est pas la bonne direction et corrige vers la bonne direction.<br>
+				Encore pire, si le robot était un peu décalé et qu'il avait une consigne qui le faisait rentrer le mur, il se bloque sans atteindre sa consigne.<br>
+				(C'est bien sûr arrivé qu'une seule fois pendant un match et nous pas réussit à reproduire même avec plus de 20 essais)<br>
+				(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=-7Uy96LrEiw&t=1716s">lien youtube</a>)
+			</p>
+
+			<p>
+				<strong>les roues en silicone qui ramassent trop de poussière</strong><br>
+				On pense que ça vient du moule en impression 3D qui laisse l'empreinte des couches 3D sous forme de mini stries sur la surface de la roue et que la poussière vient se loger dedans.<br>
+				On a pas spécialement aidé en ne nettoyant pas trop la table et en faisant rouler le robot par terre.<br>
+			</p>
+
+			<p>
+				<strong>les roues en silicone qui se sont détendus lors de blocage</strong> du robot contre un mur et les roues en impression 3D ont fondu au niveau de l'arbre du moteur<br>
+				Happy ending, c'est les roues/pneu qui ont fondu et pas le terrain :D<br>
+				(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=4GzkwMop-ps&t=2652s">lien youtube</a>)
+			</p>
+			
+			<p>
+				<strong>les gobelets qu'on a utilisés lors de notre préparation n'avaient pas la surface en vinyle en dessous</strong><br>
+				Lors des matchs à la coupe, on a eu une grande surprise, il arrivait régulièrement que lors de la dépose des gobelets dans le grand port, ils n'avaient pas leurs surface de dessous parfaitement en contact avec le sol (environ 1mm), les points n'étaient donc pas validé par les arbitres.<br>
+				Le vinyle sous les gobelets adhéraient beaucoup plus que seulement le dessous du gobelets à nu.<br>
+			</p>
+			<figure class="center">
+				<a href="images/gobelet.jpg"><img src="thumbnails/gobelet.jpg"></a>
+				<figcaption>Les jauges ne mentent pas, il y avait vraiment au max 1mm</figcaption>
+			</figure>
+
+			<p>
+				<strong>la tirette de démarrage qui reste bloqué dans le robot</strong><br>
+				et qui le fait décoller au début d'un match! Heureusement c'est arrivé qu'une seule fois.
+				(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ig4MHUossfo&t=6376s">lien youtube</a>)
+			</p>
+
+			<p>
+				<strong>la carte de débogage (debug_board) qui n'a jamais fonctionné</strong><br>
+				Cette carte devait être un programmateur/débogueur central des cartes, l'idée c'était que sa soit une sorte de ST-LINK relié au SWD des 4 cartes qui ont un STM32.<br>
+				Un gros commutateur rotatif devait permettre de sélectionner la carte à déboguer et un gros USB type-B devait sortir sur le toit du robot qui lui devait être le ST-LINK.<br>
+				Pour le ST-LINK on l'a dessoudé d'une nucleo64 et placé sur la debug_board, mais la communication USB n'a jamais fonctionné.<br>
+				On n'a pas de réponse au pourquoi ça n’a pas fonctionné, mais sur le schématique officiel du ST-LINK ils utilisent un USB mini B (contre seulement un type B pour nous).<br>
+				On n'a également pas placé le transistor commandé par USB_RENUM et qui va sur le D+, et on n'a pas de pin ID relié avec 100k à GND sur l'USB type B.<br>
+			</p>
+
+			<p>
+				<strong>des gobelets qui n'auraient pas du se trouver dans la zone de départ</strong><br>
+				En 8ème de finale lors du match contre RCT, ils avaient une botte secrète plutôt inattendu: une turbine cachée dans le robot qui permet de pousser des gobelets.<br>
+				Et hop en moins de 2 secondes, une mine dans notre zone de départ,  mais "c'était pour nous aider avec une mine répétable et pas aléatoire au lieu de juste foncer dedans" :( <br>
+				Le système anti-mines n'a pas pu nous sauver, on ne peut pas retirer les mines dans les coins..<br>
+				(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=7C_RBSw67g4&t=4588s">lien youtube</a>)
+			</p>
+			<figure class="center">
+				<a href="images/RCT.png"><img src="thumbnails/RCT.png"></a>					
+			</figure>
+		</section>
+
+		<section id="compte-rendu-caracteristiques">
+			<h3>2.6. Caractéristiques des robots<a class="self-link" href="#compte-rendu-caracteristiques"></a></h3>
+
+			<section>
+				<h4>Base roulante commune aux 2 robots</h4>
+				<ul>
+					<li>2x moteurs FAULHABER 3242G012CR avec encodeurs IER3-1024 et réducteurs 32GTP 1:14, avec un drivers Pololu Dual VNH5019</li>
+					<li>2x encodeurs rotatifs à effet hall 14-bit: AMS AS5047U</li>
+					<li>bloc roue odométrique avec 2 rails MGN9, 2 roulements à bille 6705-25x32x4mm, o-ring 50x40x5mm</li>
+					<li>roues impression 3D et pneus en silicone shore 20A</li>
+					<li>ball casters: 4x KSM-8FL, capacité 8kg</li>
+				</ul>
+				<figure class="center" style="max-width: 100%;">
+					<div class="sameline">
+						<a href="images/chasis-grosbot.jpg"><img src="thumbnails/chasis-grosbot.jpg"></a>
+						<a href="images/chasis-potibot.jpg"><img src="thumbnails/chasis-potibot.jpg"></a>
+					</div>
+					<figcaption>Châsis du grosbot et potibot</figcaption>
+				</figure>
+				
+				<figure class="center">
+					<a href="images/mise-en-plan-motorisation.jpg"><img src="thumbnails/mise-en-plan-motorisation.jpg"></a>
+					<figcaption>Mise en plan de la motorisation et odométrie commune aux robots</figcaption>
+				</figure>
+	
+				<figure class="center" style="max-width: 100%;">
+					<div class="sameline">
+						<a href="images/moteurs.jpg"><img src="thumbnails/moteurs.jpg"></a>
+						<a href="images/odometrie.jpg"><img src="thumbnails/odometrie.jpg"></a>
+						<a href="images/roues.jpg"><img src="thumbnails/roues.jpg"></a>
+					</div>
+				</figure>
+			</section>
+
+			<h4>Pneumatique</h4>
+			<ul>
+				<li>4x ventouses DP S30, 1.5 soufflet, diamètre 30mm</li>
+				<li>4x pompes 12V</li>
+				<li>tubes SMC en polyuréthane, diamètre 4mm</li>
+				<li>4 raccords en T QSMT-4 FESTO</li>
+				<li>4 électrovannes CJAV08-2B05A1 5V</li>
+			</ul>
+			<figure class="center">
+				<a href="images/pneumatique.jpg"><img src="thumbnails/pneumatique.jpg"></a>
+			</figure>
+	
+			<h4>Servomoteurs et moteurs pas à pas</h4>
+			<ul>
+				<li>MG996R (5 pour le gros robot, 4 pour le petit robot)</li>
+				<li>DS3218 20kg/cm 270deg (4 pour le gros robot)</li>
+				<li>RDS3235 35kg/cm 270deg (2 pour le gros robot)</li>
+				<li>28BYJ-48 5V, avec driver MP6500 (5 pour le gros robot)</li>
+			</ul>
+	
+			<h4>Électronique</h4>
+			<ul>
+				<li>Carte actionneurs/capteurs (io_board): 2 STM32F446RE</li>
+				<li>Carte écran (strategy_board): STM32F469NI Discovery kit</li>
+				<li>Carte puissance (power_board): STM32F446RE, 3x relais 16A bistable</li>
+				<li>Raspberry Pi 4 avec shield CAN PiCAN 2 et camera SaintSmart FOV160 5-Megapixel</li>
+				<li>2 convertisseurs DC-DC buck 20A 300W</li>
+			</ul>
+	
+			<p><strong>Capteurs de couleurs:</strong> TCS34725 (2 pour le gros robot)</p>
+			
+			<strong>Batteries</strong>
+			<ul>
+				<li>CONRAD NiMh 12V 4200mAh (1 par robot)</li>
+				<li>CONRAD NiMh 7.2V 3000mAh (1 par robot)</li>
+			</ul>
+	
+			<h4>Programmation</h4>
+			<ul>
+				<li>Pour les STM32: mbed + VSCode avec PlatformIO</li>
+				<li>Pour le linux: Qt Creator + OpenCV + Python</li>
+			</ul>
+		</section>
+
+		<section id="compte-rendu-contributions">
+			<h3>2.7. Nos autres contributions<a class="self-link" href="#compte-rendu-contributions"></a></h3>
+
+			<p>
+				<a class="external-link" target="_blank" href="https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot">https://github.com/VRAC-team/la-maxi-liste-ressources-eurobot</a> - Compilation de ressources (cours/vidéos/composants/discussions/liens) pour faire un bon robot à Eurobot <br>
+			</p>
+
+			<p>
+				<a class="external-link" target="_blank" href="https://github.com/VRAC-team/eurobot_video_slicer">https://github.com/VRAC-team/eurobot_video_slicer</a> - Téléchargement et extraction automatique des matchs depuis les vidéos youtube, contient tout les les timestamps de la coupe 2021<br>
+			</p>
+		</section>
+
+		<section id="compte-rendu-conclusion">
+			<h3>2.8. Conclusion<a class="self-link" href="#compte-rendu-conclusion"></a></h3>
+
+			<p>
+				C'était encore une fois une super coupe, des beaux robots, une orga tip top comme d'habitude 8)<br>
+				On est hyper content d'arriver à égaler notre dernière performance de 2020, avec plus d'équipes cette fois<br>
+				Très content aussi du 2ème plus haut score de la coupe ! (169 max RCVA, 166 max VRAC, 165 max A.I.G.R.I.S.)<br>
+				On a bien sûr eu une légère amertume des 8ème de finale, mais vite apaisé par les matchs amicaux qui s'en sont suivis après les finales :D<br>
+				<br>
+				A très vite à la coupe d'Ile de France !<br>
+			</p>
+
+			<figure class="center" style="max-width:100%;">
+				<a href="images/team.jpg"><img src="thumbnails/team.jpg"></a>
+			</figure>
+
+			<figure class="center">
+				<a href="images/match.jpg"><img src="thumbnails/match.jpg"></a>
+			</figure>
+
+			<figure class="center">
+				<a href="images/stand.jpg"><img src="thumbnails/stand.jpg"></a>
+				<figcaption>Le traditionel CS de bon matin</figcaption>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-remerciements">
+			<h3>2.9. Remerciements<a class="self-link" href="#compte-rendu-remerciements"></a></h3>
+
+			Un grand merci à nos sponsors qui nous ont régalé !<br>
+			<a class="external-link" target="_blank" href="https://www.claas.fr">Claas</a><br>
+			<a class="external-link" target="_blank" href="https://www.faulhaber.com">Faulhaber</a><br>
+			<a class="external-link" target="_blank" href="https://www.tracopower.com">Traco Power</a><br>
+	
+			Un grand merci aussi à l'<a class="external-link" target="_blank" href="https://www.iut-cachan.universite-paris-saclay.fr">IUT de Cachan</a> et au CRAC de nous avoir laissé utiliser leurs locaux, ainsi qu'à l'<a href="http://innovlab-iut-cachan.blogspot.com">Innov'Lab</a>.<br>
+			
+			<figure class="center" style="max-width:100%;">
+				<a href="images/sponsors.jpg"><img src="thumbnails/sponsors.jpg"></a>
+			</figure>
+		</section>
+	</section>
+
+	<section id="matchs-cdf">
+		<h2>Matchs Coupe de France</h2>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_serie1.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 1: Cybernétique en Nord 2 (111)  - VRAC (96)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ZFVgK0XuA1k&t=5632s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/coupe-2021-serie-1/">Classement provisoire</a>: 9ème ex aequo, 96pts<br>
+				<a href="matchs/2021cdr_serie1.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_serie2.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 2: VRAC (163) - IUT Toulon (42)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=wFiX42pIlPI&t=3571s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/coupe-2021-serie-2/">Classement provisoire</a>: 2ème, 259pts<br>
+				<a href="matchs/2021cdr_serie2.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_serie3.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 3: Eceborg (65) - VRAC (133)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=4GzkwMop-ps&t=2574s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/coupe-2021/">Classement provisoire</a>: 3ème, 392pts<br>
+				<a href="matchs/2021cdr_serie3.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_serie4.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 4: SharkFIT (33) - VRAC (166)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=JxFavgg8Ro8&t=5482s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/coupe-2021-serie-4/">Classement provisoire</a>: 3ème, 558pts<br>
+				<a href="matchs/2021cdr_serie4.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_serie5.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 5: VRAC (62) - RCVA (160)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=-7Uy96LrEiw&t=1675s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/coupe-2021-serie-5/">Classement provisoire</a>: 4ème, 620pts<br>
+				<a href="matchs/2021cdr_serie5.png">Score du match</a>
+			</figcaption>
+		</figure>
+		
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_serie6.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 6: VRAC (78) - AREM (52)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ig4MHUossfo&t=6376s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/coupe-2021-serie-6/">Classement fin de séries</a>: 4ème, 698pts<br>
+				<a href="matchs/2021cdr_serie6.png">Score du match</a>
+			</figcaption>
+		</figure>
+		
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_serie6.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				1/8 Finales: Robot Club Toulon RCT (130) - VRAC (62)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=7C_RBSw67g4&t=4588s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/coupe-2021-finales/">Classement</a><br>
+				<a href="matchs/2021cdr_serie6.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_amical-AIGRIS.webm" type="video/webm">
+			</video>
+			<figcaption>
+				Match amical: VRAC - A.I.G.R.I.S.<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=qK4xKjrqQsM">YouTube</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_amical-RCT.webm" type="video/webm">
+			</video>
+			<figcaption>
+				Match amical: VRAC gros robot(feat RCT) - RCT (feat VRAC petit robot)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ohPw0GkKZmQ">YouTube</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021cdr_amical-RCVA.webm" type="video/webm">
+			</video>
+			<figcaption>
+				Match amical: VRAC - RCVA<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=gokGqig4cmE">YouTube</a><br>
+			</figcaption>
+		</figure>
+	</section>
+
+	<section id="matchs-idf">
+		<h2>Matchs Coupe Île-de-France</h2>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_serie1.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 1: VRAC (151) - Ares ENSEA (59)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ZfEXWXGDJcI&t=3023s">YouTube</a><br>
+				<a href="matchs/2021idf_serie1.png">Score du match</a><br>
+				<a href="matchs/2021idf_classement-serie1.png">Classement</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_serie2.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 2: VRAC (128) - RCVA (118)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ZfEXWXGDJcI&t=5508s">YouTube</a><br>
+				<a href="matchs/2021idf_serie2.png">Score du match</a><br>
+				<a href="matchs/2021idf_classement-serie2.png">Classement</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_serie3.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 3: Evolutek (157) - VRAC (146)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ZfEXWXGDJcI&t=10980s">YouTube</a><br>
+				<a href="matchs/2021idf_serie3.png">Score du match</a><br>
+				<a href="matchs/2021idf_classement-serie3.png">Classement</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_serie4.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 4: VRAC (91) - ARIG (127)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=9Eqf80PtYeE&t=2087s">YouTube</a><br>
+				<a href="matchs/2021idf_serie4.png">Score du match</a><br>
+				<a href="matchs/2021idf_classement-serie4.png">Classement</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_serie5.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 5: VRAC (159) - TDS Team (39)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=9Eqf80PtYeE&t=7268s">YouTube</a><br>
+				<a href="matchs/2021idf_serie5.png">Score du match</a><br>
+				<a href="matchs/2021idf_classement-serie5.png">Classement</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_finale-quart.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				1/4 finales: VRAC (152) - Ares ENSEA (41)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=IDt3KyPq6k0&t=286s">YouTube</a><br>
+				<a href="matchs/2021idf_finale-quart.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_finale-demi.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				1/2 finales: VRAC (82) - ARIG (73)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=IDt3KyPq6k0&t=3441s">YouTube</a><br>
+				<a href="matchs/2021idf_finale-demi.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_finale-1.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				finale match 1: VRAC (113) - RCVA (123)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=IDt3KyPq6k0&t=7237s">YouTube</a><br>
+				<a href="matchs/2021idf_finale-1.png">Score du match</a>
+			</figcaption>
+		</figure>
+		
+		<figure>
+			<video controls>
+				<source src="matchs/2021idf_finale-2.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				finale match 2: RCVA (123) - VRAC (77)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=IDt3KyPq6k0&t=7905s">YouTube</a><br>
+				<a href="matchs/2021idf_finale-2.png">Score du match</a>
+			</figcaption>
+		</figure>
+	</section>
+</article>

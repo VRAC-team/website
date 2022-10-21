@@ -1,0 +1,496 @@
+---
+layout: default
+title: Age Of Bots 2022
+description: "Participation à la Coupe de France de Robotique 2022 - Age Of Bots"
+---
+<h1>Coupe de Robotique 2022 - Age Of Bots</h1>
+
+<nav id="table-des-matieres">
+	<h2>Table des matières</h2>
+	<ul>
+		<li>1. <a href="#article-resume">Résumé du règlement</a></li>
+		<li>2. <a href="#article-compte-rendu">Compte rendu</a></li>
+		<li>
+			<ul>
+				<li>2.1. <a href="#compte-rendu-introduction">Introduction</a></li>
+				<li>2.2. <a href="#compte-rendu-planning">Planning</a></li>
+				<li>2.3. <a href="#compte-rendu-architecture-electronique">Architecture électronique</a></li>
+				<li>2.4. <a href="#compte-rendu-grosbot">Grosbot</a></li>
+				<li>2.5. <a href="#compte-rendu-potibot">Potibot</a></li>
+				<li>2.6. <a href="#compte-rendu-livre-dor">Livre d'or</a></li>
+				<li>2.7. <a href="#compte-rendu-gallerie">Gallerie photos</a></li>
+				<li>2.8. <a href="#compte-rendu-remerciements">Remerciements</a></li>
+			</ul>
+		</li>
+		<li>3. <a href="#matchs-cdf">Matchs Coupe de France</a></li>
+	</ul>
+</nav>
+
+<article>
+	<section id="resume-reglement">
+		<h2>1. Résumé du règlement<a class="self-link" href="#resume-reglement"></a></h2>
+
+		<figure class="center" style="max-width:500px;">
+			<img src="age-of-bots_table.png"><br>
+			<figcaption>Table Age Of Bots</figcaption>
+		</figure>
+
+		<figure class="figure-no-border">
+			<blockquote>
+				<figure id="logo-reglement">
+					<img src="age-of-bots_logo.png">
+					<figcaption>Logo Age Of Bots</figcaption>
+				</figure>
+
+				<p>
+					Après de nombreuses années à explorer les quatre coins du monde et de l’univers, nos amis les robots ont décidé d’aller explorer leur passé.
+					En 2022, les robots iront fouiller les ruines d’une ancienne civilisation robo-tique à la recherche des fragments oubliés de leurs origines.
+				</p>
+				<p>
+					Carré de fouille, trésors enterrés et statuettes sacrées, voilà ce qui attend nos archéologues chevronnés, et rien ne les arrêtera dans la quête de leur Histoire.
+					Alors sortez les pelles et les pioches, car l’aventure nous attend !
+				</p>
+				<p>Nos missions seront :</p>
+				<ul>
+					<li>Découvrir les carrés de fouille</li>
+					<li>Rechercher et analyser les échantillons</li>
+					<li>Mettre à l’abri les échantillons</li>
+					<li>Afficher fièrement vos découvertes au musée</li>
+					<li>Préserver et exposer la statuette</li>
+					<li>Revenir au campement, à la fin de leur journée</li>
+					<li>Estimer votre performance</li>
+				</ul>
+			</blockquote>
+			<cite>Extrait de la <a class="external-link" target="_blank" href="https://www.coupederobotique.fr/edition-2022/le-concours/thematique/">Thématique 2022</a></cite>
+		</figure>
+	</section>
+
+	<section id="compte-rendu">
+		<h2>2. Compte rendu<a class="self-link" href="#compte-rendu"></a></h2>
+
+		<p class="note">
+			NOTE: Ce compte rendu à été originalement publié sur le forum de Planète-Sciences le 19 Juin 2022 (<a class="external-link" target="_blank" href="https://www.planete-sciences.org/forums/viewtopic.php?t=18854">lien</a>)
+		</p>
+
+		<section id="compte-rendu-introduction">
+			<h3>2.1. Introduction<a class="self-link" href="#compte-rendu-introduction"></a></h3>
+
+			<p>
+				Hello le forum,<br>
+				<br>
+				Comme chaque année voici notre compte rendu de la coupe, cette année c’était Age of Bots<br>
+				<br>
+				Pour commencer pépère, voici le poster technique qui s’inspire des feuilles de relevé d’archéologues.<br>
+			</p>
+			<figure class="center">
+				<a href="images/poster.png"><img src="thumbnails/poster.png"></a>
+			</figure>
+			
+			<p>
+				Lors de la coupe on a imprimé une version non préremplie, on a sorti nos plus beaux markers et stylos pour le remplir à la main et faire les croquis comme de vrais archéologues.<br>
+				D'ailleurs on a bien fait poireauter le jury avec 30 bonnes minutes de papote le temps de remplir le poster le plus rapidement possible au stand. Ils ont eu le droit à la genèse de l'équipe jusqu'à aujourd'hui.<br>
+			</p>
+			<figure class="center">
+				<a href="images/poster_stylo.jpg"><img src="thumbnails/poster_stylo.jpg"></a>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-planning">
+			<h3>2.2. Planning<a class="self-link" href="#compte-rendu-planning"></a></h3>
+
+			<p>
+				Cette année pour la première fois dans l'histoire de l'asso, la CAO finale du grosbot était très avancé à peine 2 mois après la sortie du règlement (je me suis un peu trop motivé haha) et la CAO du potibot était plus une première version de brouillon.<br>
+				<br>
+				On a même fait découper le châssis du grosbot en mi-décembre avec la jet d'eau!<br>
+			</p>
+			<figure class="center" style="max-width:100%;">
+				<div class="sameline">
+					<a href="images/base_1.jpg"><img src="thumbnails/base_1.jpg"></a><br>
+					<a href="images/base_2.jpg"><img src="thumbnails/base_2.jpg"></a><br>
+				</div>
+			</figure>
+			<figure class="center">
+				<a href="images/base_3.jpg"><img src="thumbnails/base_3.jpg"></a><br>
+				<figcaption>(c'est la première fois on a une pièce en alu usiné dans le robot :o )<br></figcaption>
+			</figure>
+			
+			<p>
+				Mais ce démarrage foudroyant s'est suivi d'un bon creux entre décembre et début mars (faut bien se reposer quand même)<br>
+			</p>
+			<figure class="center">
+				<a href="images/gitlab.png"><img src="thumbnails/gitlab.png"></a><br>
+				<figcaption>ça se voit très bien avec la fréquence d'activité sur le git</figcaption>
+			</figure>
+			
+			<p>
+				Au niveau de dates de début d'assemblage des robots on est resté sur du plus classique, c'est-à-dire que le grosbot a été fabriqué et assemblé à peine plus d'une mois avant la coupe (premier test sur la table du CRAC le 30 avril) et le potibot une semaine et demie (premier test sur table le 18 mai) <img class="smilies" src="/assets/phpbb-smilies/icon_rolleyes.gif" alt=":roll:" title="" width="15" height="15"><br>
+			</p>
+		</section>
+
+		<section id="compte-rendu-architecture-electronique">
+			<h3>2.3. Architecture électronique<a class="self-link" href="#compte-rendu-architecture-electronique"></a></h3>
+			
+			<p>L’architecture globale des robots (sans les modifs de dernière minute)</p>
+			<figure class="center" style="max-width:100%;">
+				<a href="images/architecture.png"><img src="thumbnails/architecture.png"></a>
+			</figure>
+
+			<p>
+				<strong>IOBOARD</strong>:<br>
+				Même pas besoin de refaire la carte principale qui s'occupe des capteurs/actionneurs, on garde celle de 2021 avec une légère modification: il faut contrôler les 12 pompes alors que la carte ne peut en gérer que 8.<br>
+				En 2021 on utilisait 5 moteurs pas à pas avec des driver MP6500, on à eu l'idée de les remplacer par des cartes custom pour la gestion des pompes!<br>
+				Cette idée de mini shield remplaçable est bien intéressante pour des architectures électroniques matures !<br>
+			</p>
+			<figure class="center">
+				<a href="images/ioboard.jpg"><img src="thumbnails/ioboard.jpg"></a>
+			</figure>
+			
+			<p>
+				<strong>POWERBOARD</strong>:<br>
+				Chaque année j’oubliais systématiquement la distribution des alims, et sa se terminai toujours sur des épissures ou des cartes de proto faite a la main.<br>
+				Cette année au moins on a un truc basique, c’est pas encore tip top mais c’est déjà sa.<br>
+				L’an prochain une version qui intègre les alims devrait voir le jour <img class="smilies" src="/assets/phpbb-smilies/icon_e_smile.gif" alt=":)" title="" width="15" height="15"><br>
+			</p>
+			
+			<p>
+				<strong>MOTORBOARD</strong>:<br>
+				Pas de grande nouveauté sur lala carte moteurs, uniquement l'empreinte du shield pololu VNH5019 était décalé d'un pin (adieu l'horrible adaptateur)
+			</p>
+			<figure class="center">
+				<a href="images/pcb.jpg"><img src="thumbnails/pcb.jpg"></a>
+			</figure>
+			
+			<p>
+				<strong>TESTEUR DE SERVOS</strong>:<br>
+				Lors de l’assemblage du grosbot, j’ai développé un testeur de servos qui est constitué d'un potentiomètre pour définir la consigne en angle, d'un bouton et d'afficheurs 7 segments.<br>
+				Il permet d'obtenir rapidement les angles minimum et maximum de chaque servo.<br>
+				Le bouton lance un mode balayage qui demande comme consigne 0 degré et lance un compteur en millisecondes sur l'afficheur, puis une seconde plus tard redémarre le compteur et demande 180 degrés.<br>
+				En filmant en 240 images par seconde on peut caractériser le temps de réaction des servos (faut pas trop faire confiante aux datasheet inexistantes chinoises)<br>
+			</p>
+			<figure class="center">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zInBFYO3C_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<figcaption>caractérisation des servos (<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=zInBFYO3C_Y">lien youtube</a>)</figcaption>
+			</figure>
+			
+			<p>
+				<strong>VITRINE</strong>:<br>
+				La vitrine se déclenche par la dépose de la statuette qui est recouverte de papier aluminium pour faire contact avec des bandes.<br>
+				Elle disposait au début d'enceintes, d'un ampli et un module SD qui est parti en fumée au premier test.<br>
+			</p>
+			<figure class="center">
+				<a href="images/vitrine.jpg"><img src="thumbnails/vitrine.jpg"></a>
+			</figure>
+			
+			<p>
+				<strong>MAT CENTRAL</strong>:<br>
+				On aurait dû avoir un système de repérage des échantillons par vidéo sur le mât central mais par faute de temps, il n’y a qu’une batterie et un routeur Wi-Fi.<br>
+				Il permet de créer un point d'accès Wi-Fi 5GHz et de définir un hostname pour les robots.
+			</p>
+		</section>
+
+		<section id="compte-rendu-grosbot">
+			<h3>2.4. Grosbot<a class="self-link" href="#compte-rendu-grosbot"></a></h3>
+			
+			<figure class="center">
+				<div class="sameline">
+					<a href="images/grosbot_1.jpg"><img src="thumbnails/grosbot_1.jpg"></a>
+					<a href="images/grosbot_2.jpg"><img src="thumbnails/grosbot_2.jpg"></a>
+				</div>
+			</figure>
+			
+			<figure class="center" style="max-width:100%;">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cm1uyisgfpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<figcaption>le grosbot qui fait sa tambouille (<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=cm1uyisgfpw">lien youtube</a>)</figcaption>
+			</figure>
+			
+			<p>
+				<strong>PNEUMATIQUE</strong>:<br>
+				On bat notre record de pompes à vide dans le robot avec 12 pompes et 12 valves! (on en utilise que 11 mais garder la symétrie était plus sympa <img class="smilies" src="/assets/phpbb-smilies/icon_e_wink.gif" alt=";)" title="" width="15" height="15"><br>
+				Petite économie de 20 fils avec une alim commune pour les pompes et idem pour les valves.<br>
+			</p>
+			<figure class="center">
+				<a href="images/pneumatique.jpg"><img src="thumbnails/pneumatique.jpg"></a>
+			</figure>
+
+			<p>
+				<strong>RUSH SUR LE TASSEAU</strong>:<br>
+				Pour les phases finales on avait prévu le coup avec une fente dans le robot pour "enjamber" le tasseau centrale afin de récupérer les 2 distributeurs.<br>
+				Si on est les premiers sur la zone la double prise se passe au poil !<br>
+			</p>
+			<figure class="center" style="max-width:100%;">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t86WUEjQpdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> (rush grosbot au dessus du tasseau)<br>
+				</div>
+				<figcaption>(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=t86WUEjQpdk">lien youtube</a>)</figcaption>
+			</figure>
+
+			<p>
+				<strong>SERVOS</strong>:<br>
+				Lors des tests sur le grosbot, le bras central avant nous a fait quelques frayeurs en ne respectant pas du tout les consignes en angle demandé.<br>
+				Cela à causer son auto-destruction au niveau du second servo à 2 reprises.<br>
+			</p>
+			<figure class="center">
+				<a href="images/servo_1.jpg"><img src="thumbnails/servo_1.jpg"></a>
+			</figure>
+			<p>
+				Il ne nous restait qu'un dernier servo de remplacement, on a alors trouvé une solution en limitant le courant de l'alim moteur afin de ne pas casser les engrenages lors de blocages mécaniques.<br>
+				Lors de la limitation en courant la tension chutait trop et le microcontrôleur du servo redémarrait.<br>
+				On a donc dessoudé le régulateur 3.3V du pcb et directement connecté un 3.3V externe qui n'est pas dépendant de l'alim servo.<br>
+			</p>
+			<figure class="center">
+				<a href="images/servo_regulation.jpg"><img src="thumbnails/servo_regulation.jpg"></a>
+			</figure>
+			<figure class="center">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ADL8P95-wm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				</div>
+				<figcaption>(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=ADL8P95-wm8">lien youtube</a>)</figcaption>
+			</figure>
+
+			<p>
+				La galère des servos continue avec les 3 servos ultra-rapides (pour la récupération des échantillons face rocher) qui oscillaient en permanence à une haute fréquence (probablement le PID du servo réglé avec le cul, ou pas du tout).<br>
+				Un de ces servos à cesser de fonctionner sans raison particulière (pas de dégât mécanique ni électronique visible), on l'a alors remplacé par un autre servo plus classique (on n'avait pas de remplacement) et au premier test on a eu de la fumée qui est sortie du robot (et on a eu très peur). Heureusement c'est juste le servo tout neuf qui a cramé (encore pour aucune raison).<br>
+			</p>
+			<figure class="center">
+				<a href="images/servo_2.jpg"><img src="thumbnails/servo_2.jpg"></a>
+			</figure>
+			
+			<p>
+				Pour la prise des échantillons face rocher devant le campement on avait besoin de servos ultra-rapides, et des capteurs photoélectriques pour déclencher la prise des échantillons.<br>
+			</p>
+			<figure class="center">
+				<div class="iframewrapper">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F3_rcjrQhTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> (grosbot bras arrière)<br>
+				</div>
+				<figcaption>(<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=F3_rcjrQhTk">lien youtube</a>)</figcaption>
+			</figure>
+			
+			<p>
+				<strong>TIRETTE DE DEMARRAGE</strong>:<br>
+				L'an dernier on avait eu un blocage de la tirette de démarrage en PLA dans le robot lors du démarrage, cette année on corrige définitivement avec un capteur à induction et une tirette en acier!<br>
+			</p>
+			<figure class="center">
+				<a href="images/tirettes.jpg"><img src="thumbnails/tirettes.jpg"></a>
+			</figure>
+			
+		</section>
+
+		<section id="compte-rendu-potibot">
+			<h3>2.5. Potibot<a class="self-link" href="#compte-rendu-potibot"></a></h3>
+
+			<p>
+				<strong>INSERTS PLASTIQUE</strong>:<br>
+				On aime tellement les inserts plastiques qu'on s'est dit, il nous faut un équivalent pour le bois afin de fixer les cartes élecs au panneau arrière des robots.<br>
+				Il y a 2 pièces, une qui intègre l'insert au l'autre qui sert d'entretoise, un petit point de colle forte sur chacune des 2 pièces et hop c'est installé.<br>
+			</p>
+			<figure class="center" style="max-width:100%;">
+				<div class="sameline">
+					<a href="images/inserts.jpg"><img src="thumbnails/inserts.jpg"></a>
+					<a href="images/potibot_1.jpg"><img src="thumbnails/potibot_1.jpg"></a>
+					<a href="images/potibot_2.jpg"><img src="thumbnails/potibot_2.jpg"></a>
+				</div>
+			</figure>
+				
+			<p>
+				<strong>VIS DE PRESSION</strong>:<br>
+				Le samedi de la coupe au petit matin on a eu les roues qui se sont desserrées de l'arbre moteur, environ 2h de travail pour les remettre (c'est pas idéal). Il faut qu'on se choppe un frein filet plus sérieux l'an prochain pour éviter sa.<br>
+			</p>
+			<figure class="center">
+				<a href="images/potibot_appart.jpg"><img src="thumbnails/potibot_appart.jpg"></a>
+			</figure>
+			
+			<p>
+
+			<p>
+				<strong>POUSSE REPLIQUE</strong>:<br>
+				Le pousse réplique se trouve à l'arrière du potibot, il est juste composé d'un simple servo qui en appuie contre la réplique la maintient dans le robot, mais peut aussi la pousser pour la déposer sur le piédestal. Ce système à toujours fonctionné une fois réglé.<br>
+				Toujours au petit matin du samedi on en a profité pour resérer l'ensemble des vis des robots, et ce pousse réplique était visiblement très desserré.<br>
+				Lors de la demi-finale contre ESEO (après 3 matchs et pas mal de tests), le pousse vitrine à refuser de fonctionner, la réplique est tombée juste devant l'abri de chantier et nous a bloqué complètement la dépose des échantillons en dessous donc l'estimation du score était dans les choux. Même problème lors de la petite finale avec ARIG.<br>
+				L'an prochain on dit adios aux MG996R pour de bon <img class="smilies" src="/assets/phpbb-smilies/icon_e_smile.gif" alt=":)" title="" width="15" height="15"><br>
+			</p>
+			<figure class="center">
+				<a href="images/eseo_1.jpg"><img src="thumbnails/eseo_1.jpg"></a>
+				<figcaption>sueur froide côté ESEO</figcaption>
+			</figure>
+			<figure class="center">
+				<a href="images/eseo_2.jpg"><img src="thumbnails/eseo_2.jpg"></a>
+				<figcaption>sueur très froide côté VRAC</figcaption>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-livre-dor">
+			<h3>2.6. Livre d'or<a class="self-link" href="#compte-rendu-livre-dor"></a></h3>
+
+			<p>
+				Lorsqu'on est arrivé à la coupe on s'est dit qu'on allait en profiter un maximum, on a eu l'idée de ramener une petite partie de l'ambiance de la coupe à la maison à travers du papier et des stylos!<br>
+				On partagera le livre d'or sur le discord quand on aura trouvé de quoi le scanner correctement (on n'a qu'une version grave rognée pas top pour le moment).<br>
+				Un énorme merci a ceux qui y ont contribué de plein gré (ou de force lors du barbecue haha) <img class="smilies" src="/assets/phpbb-smilies/icon_e_biggrin.gif" alt=":D"><br>
+			</p>
+			<figure class="center">
+				<a href="images/livre_dor.jpg"><img src="thumbnails/livre_dor.jpg"></a>
+			</figure>
+		</section>
+
+		<section id="compte-rendu-gallerie">
+			<h3>2.7. Gallerie photos<a class="self-link" href="#compte-rendu-gallerie"></a></h3>
+
+			<figure class="center">
+				<a href="images/transport.jpg"><img src="thumbnails/transport.jpg"></a>
+			</figure>
+
+			<figure class="center">
+				<a href="images/stand.jpg"><img src="thumbnails/stand.jpg"></a>
+			</figure>
+
+			<figure class="center" style="max-width:100%;">
+				<a href="images/robots.jpg"><img src="thumbnails/robots.jpg"></a>
+			</figure>
+
+			<figure class="center">
+				<a href="images/robots_cs.jpg"><img src="thumbnails/robots_cs.jpg"></a>
+			</figure>
+
+			<figure class="center">
+				<a href="images/barbecue.jpg"><img src="thumbnails/barbecue.jpg"></a>
+			</figure>
+
+			<figure class="center">
+				<a href="images/robots_prix.jpg"><img src="thumbnails/robots_prix.jpg"></a>
+			</figure>
+
+			<figure class="center" style="max-width:100%;">
+				<a href="images/team.jpg"><img src="thumbnails/team.jpg"></a>
+			</figure>
+
+			<p>
+				(On a pris des photos de tous les robots présents dans notre salle et une bonne partie dans la seconde salle, j'attends juste que le photographe me les transmette <img class="smilies" src="/assets/phpbb-smilies/icon_e_smile.gif" alt=":)" title="" width="15" height="15">)<br>
+			</p>
+		</section>
+
+		<section id="compte-rendu-remerciements">
+			<h3>2.8. Remerciements<a class="self-link" href="#compte-rendu-remerciements"></a></h3>
+			<p>
+				On atteint ainsi la 4ème place et un joli prix de la communication!
+
+				Merci à nos sponsors qui nous ont permis de participer à cette aventure!<br>
+				<a class="external-link" target="_blank" href="https://lrtechnologies.fr">LR TECHNOLOGIES</a><br>
+				<a class="external-link" target="_blank" href="https://www.claas.fr">CLAAS</a><br>
+				Un grand merci aussi à l'<a class="external-link" target="_blank" href="https://www.iut-cachan.universite-paris-saclay.fr">IUT de Cachan</a> et au CRAC de nous avoir laissé utiliser leurs locaux, ainsi qu'à l'<a class="external-link" target="_blank" href="http://innovlab-iut-cachan.blogspot.com">Innov'Lab</a>.<br>
+				<br>
+				<a href="images/sponsors.png"><img src="thumbnails/sponsors.png"></a>
+				<br>
+				Et enfin pour clôturer, un énorme bravo à Planète Sciences et aux bénévoles pour cet événement toujours au top!
+			</p>
+		</section>
+	</section>
+
+	<section id="matchs-cdf">
+		<h2>3. Matchs Coupe de France<a class="self-link" href="#matchs-cdf"></a></h2>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_serie1.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 1: Archeooobot Ense3 (5) - VRAC (160)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=8lBwJ6JFBYI&t=5087s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/resultats-serie-1-coupe/">Classement provisoire</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_serie2.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 2: VRAC (141) - ESEO Equipe Espoir (161)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=vMdzwRakRxI&t=1768s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/resultats-serie-2-coupe/">Classement provisoire</a><br>
+				<a href="matchs/2022cdr_serie2.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_serie3.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 3: ESEO (174) - VRAC (168)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=TDlYSoM_SXQ&t=460s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/resultats-serie-3-coupe/">Classement provisoire</a><br>
+				<a href="matchs/2022cdr_serie3.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_serie4.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 4: ARIG (168) - VRAC (193)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=QzALBX7aHrk&t=2682s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/resultats-serie-4-coupe-de-robotique-2022/">Classement provisoire</a><br>
+				<a href="matchs/2022cdr_serie4.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_serie5.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Série 5: VRAC (184) - RCVA (208)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=_Gh3H2aj0kI&t=4243s">YouTube</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/resultats-serie-5-coupe-de-robotique-2022/">Classement série 5</a><br>
+				<a class="external-link" target="_blank" href="https://www.coupederobotique.fr/classement-coupe-de-robotique-2022/">Classement fin de séries</a>: 3ème, 846pts<br>
+				<a href="matchs/2022cdr_serie5.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_finale-huitieme.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Huitièmes de finale: RIR Robotech (29) - VRAC (150)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=eeBsJafGbIg&t=2670s">YouTube</a><br>
+				<a href="matchs/2022cdr_finale-huitieme.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_finale-quart.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Quarts de finale: Supaero Robotik Club (86) - VRAC (178)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=eeBsJafGbIg&t=4394s">YouTube</a><br>
+				<a href="matchs/2022cdr_finale-quart.png">Score du match</a>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_finale-demi.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Demi-finale: VRAC (137) - ESEO (186)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=eeBsJafGbIg&t=5229s">YouTube</a><br>
+			</figcaption>
+		</figure>
+
+		<figure>
+			<video controls>
+				<source src="matchs/2022cdr_finale-petite.mp4" type="video/mp4">
+			</video>
+			<figcaption>
+				Petite finale: VRAC (???) - ARIG (???) (victoire de ARIG)<br>
+				<a class="external-link" target="_blank" href="https://www.youtube.com/watch?v=eeBsJafGbIg&t=6578s">YouTube</a><br>
+			</figcaption>
+		</figure>
+	</section>
+</article>
